@@ -17,8 +17,7 @@ class Pokemon {
     String nomeExibicao = apelido ?? especie;
     String info =
         "$nomeExibicao ($especie) | $genero | Nature: ${nature.toUpperCase()}";
-
-    // Se a API já preencheu os detalhes, mostramos no print automaticamente!
+    
     if (natureDetalhes != null) {
       info +=
           " (📈 ${natureDetalhes!.aumenta} / 📉 ${natureDetalhes!.diminui})";
