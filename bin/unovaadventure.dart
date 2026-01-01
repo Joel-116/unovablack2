@@ -44,7 +44,7 @@ Future<void> explorarUnova() async {
         String url = local['url']; // A URL para acessar detalhes do local
         
         // Quebramos a URL pelas barras "/", o número gerado vai ser o ID de cada local
-        // Lembre-se isso aqui corta a URL pra pegar o ID. Se mexer em alguma coisa vai quebrar.
+        // Lembre-se que isso aqui corta a URL pra pegar o ID. Se mexer em alguma coisa vai quebrar.
         List<String> partes = url.split('/');
         String idEncontrado = partes[partes.length - 2]; 
         // Depois de dividir, o ID está na penúltima posição sendo o número 6, pois a última é vazia após a barra final. 0 a 7 temos 8 partes, então partes.length (8) -  2 = 6, assim acessamos o ID.
